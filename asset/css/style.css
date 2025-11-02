@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c3c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Search section (optional, if you add input later) */
+.recherch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.input {
+  position: relative;
+}
+
+.input i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 1.1em;
+  pointer-events: none;
+}
+
+/* Input style */
+.recherch input {
+  width: 340px;
+  padding: 14px 20px 14px 45px; /* left padding for the icon */
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.15),0 8px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+/* Placeholder style */
+.recherch input::placeholder {
+  color: #aaa;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+/* Hover and focus effects */
+.recherch input:hover,
+.recherch input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 12px #00ffc84d, 0 0 0 1px #00ffc83a;
+  width: 370px;
+}
+
+
+
+/* Card container */
+.all-card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+/* User info card */
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.globale-info{
+    grid-column: 1 / -1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* User image */
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Name */
+.card .name {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+/* Bio */
+.card .bio {
+  font-size: 0.9em;
+  color: #bbb;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Info text */
+.card h3 {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #ddd;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.card h3:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Add subtle glow */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #00ffcc44, #0066ff33);
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.6;
+}
