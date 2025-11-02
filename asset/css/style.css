@@ -19,11 +19,12 @@ body {
 
 /* Search section (optional, if you add input later) */
 .recherch {
-  width: 100%;
+  width: 400px;
   display: flex;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 60px;
+  position: relative;
 }
 
 .input {
@@ -60,6 +61,7 @@ body {
   color: #aaa;
   letter-spacing: 0.5px;
   text-align: left;
+
 }
 
 /* Hover and focus effects */
@@ -161,4 +163,13 @@ body {
   z-index: -1;
   filter: blur(12px);
   opacity: 0.6;
+}
+
+
+.btn_search{
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
