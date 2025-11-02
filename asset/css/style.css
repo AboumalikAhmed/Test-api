@@ -173,3 +173,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.text{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.text i{
+    font-size: 40px;
+}
